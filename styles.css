@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+     
+}
+
+.answer-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.answer-row label {
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-image 3s;
+}
+
+.answer-row input[type="radio"] {
+    display: none;
+}
+
+.answer-row .selected {
+    background-color: green;
+    color: white;
+    background-image: url('./image/pencil_text.jpg');
+    background-size: cover;
+    background-position: center;
+}
